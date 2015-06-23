@@ -1,5 +1,5 @@
 .pane {
-  background: #34363b;
+  background: url('../img/bg.jpg');
 }
 .card {
   border-radius: 3px;
@@ -7,6 +7,7 @@
 .item {
   background: #f4f4f4;
   padding: 6px;
+  border-left: 5px solid #04a94d !important;
 }
 .thumbnail {
   width: 100%;
@@ -21,6 +22,9 @@
 .col-caption {
   padding-left: 15px;
 }
+.col-caption .item {
+  border-left: 0px solid !important;
+}
 .col-categoria {
   padding: 0px;
   border-left: 1px solid #e0e0e0 !important;
@@ -33,7 +37,12 @@
 .categoria {
   padding-left: 12px;
 }
-.Padr:after {
-  content: "\29";
+.filtro {
+  height: 68px;
+  background: url('../img/mask.png');
+  padding: 10px;
+  -webkit-box-shadow: inset 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
 }
 /*# sourceMappingURL=style.css.map */

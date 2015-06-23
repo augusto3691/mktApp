@@ -1,10 +1,23 @@
 <ion-view view-title="Ações">
     <ion-content>
+        <div class="filtro">
+            <button style="width: 24.10%" ng-click="modalAnoForm()" class="button button-light">
+                Dist.
+            </button>
+            <button style="width: 24.10%" ng-click="modalAnoForm()" class="button button-light">
+                Ano.
+            </button>
+            <button style="width: 24.10%" ng-click="modalAnoForm()" class="button button-assertive">
+                Com.
+            </button>
+            <button style="width: 24.10%" ng-click="modalAnoForm()" class="button button-energized">
+                Reg.
+            </button>
+        </div>
         <div class="card" ng-repeat="playlist in playlists">
             <div class="item item-text-wrap">
                 <div class="row">
-                    <div class="col col-thumbnail">
-                        <img class="thumbnail" src="img/{{playlist.img}}.png"/>
+                    <div class="col col-thumbnail" style="background: url('img/{{playlist.img}}.jpg')">
                     </div>
                     <div class="col col-75 col-caption">
                         <a class="item" href="#/app/playlists/{{playlist.id}}">
@@ -19,7 +32,7 @@
                                 </div>
                             </div>
                             <p>Lorem ipsum</p>
-                        </a>                         
+                        </a>
                     </div>
                 </div>
             </div>
