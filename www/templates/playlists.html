@@ -1,0 +1,28 @@
+<ion-view view-title="Ações">
+    <ion-content>
+        <div class="card" ng-repeat="playlist in playlists">
+            <div class="item item-text-wrap">
+                <div class="row">
+                    <div class="col col-thumbnail">
+                        <img class="thumbnail" src="img/{{playlist.img}}.png"/>
+                    </div>
+                    <div class="col col-75 col-caption">
+                        <a class="item" href="#/app/playlists/{{playlist.id}}">
+                            <div class="row row-caption">
+                                <div class="col col-80">
+                                    <h2>{{playlist.title}}</h2>
+                                </div>
+                                <div class="col col-categoria">
+                                    <span class="categoria">
+                                        <i ng-class="{'ion-paintbrush':playlist.cat == 'Personalizado','ion-clipboard':playlist.cat == 'Padrão'}"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum</p>
+                        </a>                         
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
