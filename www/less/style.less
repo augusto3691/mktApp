@@ -5,6 +5,17 @@
 }
 .card{
     border-radius: @border-radius;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+
+    h1{
+        font-size: 30px;
+    }
+
+    .detail{
+        .icon{
+            font-size: 35px;
+        }
+    }
 }
 .item{
     background: @card-background;
@@ -47,4 +58,26 @@
     -webkit-box-shadow: inset 0px 0px 15px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: inset 0px 0px 15px 0px rgba(0,0,0,0.75);
     box-shadow: inset 0px 0px 15px 0px rgba(0,0,0,0.75);
+}
+.decision{
+    padding: 0px; 
+    margin: 0px;
+    border: 0px;
+
+    height:40px;
+
+    button{
+        width: 50%;
+    }
+}
+.allow{
+    background: @brand-primary !important;
+    border-radius: 0px !important;
+    top: 0px !important;
+    right: 0px !important;
+    bottom: 0px !important;
+}
+.deny{
+    background: #ef473a !important;
+    border-radius: 0px !important;
 }

@@ -3,7 +3,7 @@ angular.module('starter.controllers', [])
         .controller('AppCtrl', function ($scope, $ionicModal, $timeout) {
 
             //Base
-            $scope.$on('$ionicView.enter', function(e) {
+            $scope.$on('$ionicView.enter', function (e) {
             });
 
             //Cria o objeto da modal
@@ -23,6 +23,11 @@ angular.module('starter.controllers', [])
                 $scope.modal.show();
             };
 
+            $scope.filterPanel = false;
+
+            $scope.toggle = function () {
+                $scope.filterPanel = !$scope.filterPanel;
+            };
 
         })
 

@@ -1,6 +1,11 @@
 <ion-view view-title="Ações">
+    <ion-nav-buttons side="right">
+        <button ng-click="toggle()" class="button button-clear">
+            <i class="icon ion-funnel"></i>
+        </button>
+    </ion-nav-buttons>
     <ion-content>
-        <div class="filtro">
+        <div ng-show="filterPanel" class="filtro">
             <button style="width: 24.10%" ng-click="modalAnoForm()" class="button button-light">
                 Dist.
             </button>
