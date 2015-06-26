@@ -1,4 +1,5 @@
 @import "variables.less";
+@import "fonts.less";
 
 .pane{
     background: @background;
@@ -80,4 +81,71 @@
 .deny{
     background: #ef473a !important;
     border-radius: 0px !important;
+}
+.clearbottom{
+    height: 30px;
+}
+.popup{
+    border-radius: @border-radius !important;
+}
+.button.button-positive {
+    border-color: @brand-primary-shadow;
+    background-color: @brand-primary;
+    color: #fff;
+}
+.viewportCentertoCenter{
+    text-align: center;
+    width: 60vw;
+    margin: 30vh auto;
+
+    img{
+        width: 100%;
+    }
+
+
+}
+.presentation{
+    background: -moz-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.25) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,0.25)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.25) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.25) 0%,rgba(255,255,255,0) 100%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.25) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
+    background: radial-gradient(ellipse at center,  rgba(255,255,255,0.25) 0%,rgba(255,255,255,0) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+    p{
+        color: white;
+        margin-top: 15px;
+        font-size: 15px;
+        font-family: @regular-font;
+    }
+
+    .swipe{
+        width: 150px;
+    }
+}
+.sidebar-custom{
+    background: #3d3f4b;
+
+    ion-item{
+        padding: 0px !important;
+        text-align: center;
+        a{
+            background: #3d3f4b !important;
+            font-size: 12px;
+            padding: 0px;
+            color: white !important;
+        }
+        p{
+            color: white !important;
+            margin: 10px 0px;
+            margin-bottom: 10px !important;
+        }
+        i{
+            font-size: 30px;
+            margin: 10px 0px;
+            top: 10px;
+            position: relative;
+        }
+    }
 }

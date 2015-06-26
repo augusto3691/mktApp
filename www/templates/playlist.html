@@ -33,13 +33,53 @@
                 </div>
             </div>
         </div>
+        <div class="card">
+            <div class="item">
+                <div class="row">
+                    <div class="col col-66">Valor da Ação</div>
+                    <div class="col">R$ 5.000,00</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="row">
+                    <div class="col col-66">Valor da Solicitação</div>
+                    <div class="col">R$ 5.000,00</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="row">
+                    <div class="col col-66">Valor Aprovado</div>
+                    <div class="col">R$ 5.000,00</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="row">
+                    <div class="col col-66">Data da Solicitação</div>
+                    <div class="col">17/06/2015</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="row">
+                    <div class="col col-66">Data Prev. de Execução</div>
+                    <div class="col">20/07/2015</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="row">
+                    <div class="col col-66">Verba de Marketing</div>
+                    <div class="col">R$ 0,00</div>
+                </div>
+            </div>
+        </div>
+        <div class="clearbottom"></div>
+
     </ion-content>
 </ion-view>
 <div class="bar bar-footer bar-balanced decision">
-    <button class="button button-clear pull-left deny">
+    <button ng-click="denyAction()" class="button button-clear pull-left deny">
         <i class="icon ion-close"></i>
     </button>
-    <button class="button button-clear pull-right allow">
+    <button ng-click="allowAction()" class="button button-clear pull-right allow">
         <i class="icon ion-checkmark"></i>
     </button>
 </div>

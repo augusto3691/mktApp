@@ -1,6 +1,6 @@
 angular.module('starter.controllers', [])
 
-        .controller('AppCtrl', function ($scope, $ionicModal, $timeout) {
+        .controller('AppCtrl', function ($scope, $ionicModal, $timeout, $ionicPopup) {
 
             //Base
             $scope.$on('$ionicView.enter', function (e) {
@@ -18,7 +18,7 @@ angular.module('starter.controllers', [])
                 $scope.modal.hide();
             };
 
-            //Abre a modal
+            //Abre a modal filtro
             $scope.modalAnoForm = function () {
                 $scope.modal.show();
             };
@@ -27,6 +27,34 @@ angular.module('starter.controllers', [])
 
             $scope.toggle = function () {
                 $scope.filterPanel = !$scope.filterPanel;
+            };
+
+            $scope.allowAction = function () {
+                var confirmPopup = $ionicPopup.confirm({
+                    title: 'Aprovar Ação',
+                    template: 'Qual o valor aprovado? <br> teste quebra de linha'
+                });
+                confirmPopup.then(function (res) {
+                    if (res) {
+                        console.log('You are sure');
+                    } else {
+                        console.log('You are not sure');
+                    }
+                });
+            };
+
+            $scope.denyAction = function () {
+                var confirmPopup = $ionicPopup.confirm({
+                    title: 'Recusar Ação',
+                    template: 'Tem certeza?'
+                });
+                confirmPopup.then(function (res) {
+                    if (res) {
+                        console.log('You are sure');
+                    } else {
+                        console.log('You are not sure');
+                    }
+                });
             };
 
         })
