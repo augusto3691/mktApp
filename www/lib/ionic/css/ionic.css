@@ -4640,7 +4640,7 @@ ion-tabs.tabs-color-active-dark .tab-item {
  * --------------------------------------------------
  */
 .item {
-  border-color: #ddd;
+  border-color: #555761;
   background-color: #fff;
   color: #444;
   position: relative;
